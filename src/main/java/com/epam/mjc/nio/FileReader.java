@@ -58,9 +58,6 @@ public class FileReader {
 
             return content.toString();
 
-        } catch (FileNotFoundException e) {
-            System.out.println("File not found");
-            return null;
         } catch (IOException e) {
             e.printStackTrace();
             return null;
