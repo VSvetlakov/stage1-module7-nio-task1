@@ -40,10 +40,9 @@ public class FileReader {
     }
 
     private String getProfileString(File file){
-        String profileString = "";
 
         try(RandomAccessFile aFile = new RandomAccessFile(file, "r");
-            FileChannel inChannel = aFile.getChannel();) {
+            FileChannel inChannel = aFile.getChannel()) {
 
             ByteBuffer buffer = ByteBuffer.allocate(1024);
 
